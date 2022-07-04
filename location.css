@@ -1,0 +1,28 @@
+/*location header properties*/
+header{background-color: #f05f3b;
+text-align: center;
+font-family:arial;
+font-size: 60px;}
+
+/*Table properties*/
+table{border:1px solid black;
+border-radius:5px;
+background-color: #f05f3b;
+width:50%;
+border-collapse: collapse;
+font-family: arial;
+font-size:38px;
+text-align:center;
+margin-left: auto;
+margin-right: auto;}
+
+/*Body properties*/
+body{background-color: #429f9e;}
+
+
+/*Image Properties*/
+img{width:50%;
+height:500px;
+display:block;
+margin-left:auto;
+margin-right:auto}

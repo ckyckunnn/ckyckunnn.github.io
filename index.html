@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nana'Restaurant</title>
+    <meta name="description" content="Nana's Restaurant online ordering Services">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="homepage.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="#"><img src="logo1.png" alt="Nana's Logo" id="logo"></a>
+        <a class="nav-link" href="#menu">Menu</a>
+        <a class="nav-link" href="#deals">Deals</a>
+        <a class="nav-link" href="location.html">Location</a>
+        <a class="nav-link" href="#aboutUs">About us</a>
+        <a class="nav-link" href="#"><img src="call.png" alt="Call Button" id="call"></a>
+        <button type="button" class="btn" data-toggle="modal" data-target="#cartModal">
+            <img src="cart.png" alt="Cart Button" id="cart">
+        </button>
+    </nav>
+    <!-- Cart modal -->
+    <div class="modal fade" id="cartModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Cart</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div id="cartInfo" class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <div>Subtotal : $ <span id="subtotal">0</span></div>
+                    <button id="cartClear" type="button" class="btn btn-danger" data-dismiss="modal">Clear</button>
+                    <button id="checkoutbtn" type="button">Check out</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <main>
+        <div id="Container">
+            <img src="homepageBg.jpg" alt="homepage background" id="firstIMG">
+            <div>
+                <img src="homepage_text.png" alt="homepage text" id="homepageText">
+                <a href="#menu" class="order">Order in Restaurant</a>
+            </div>
+        </div>
+        <div id="container">
+            <div id="menu" class="tableHeader">MENU</div>
+            <table id="table1">
+                <tr>
+                    <td class="td1"><img src="chickenBurger.jpg" alt="Chicken Burger"></td>
+                    <td class="td2">
+                        <blockquote>
+                            <h2 class="foodName">Signature Chicken Burger</h2>
+                            <hr>
+                            "Signature Chicken Burger" is a burger made by Chief Nana.<br>
+                            The chicken is made on time and all the gradients are bought on the day.
+
+                        </blockquote>
+                    </td>
+                    <td class="td3">
+                        <h2 class="price">RM7.90</h2>
+                        <div><button class="addminus" type="button"> - </button><input value="0" min="0"
+                                type="number"><button class="addminus" type="button"> + </button></div><br>
+                        <button class="addToCart">Add to cart</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="beefBurger.jpg" alt="Beef Burger"></td>
+                    <td>
+                        <blockquote>
+                            <h2 class="foodName">Signature Beef Burger</h2>
+                            <hr>
+                            "Signature Beef Burger" is a Special handmade burger by Chief Nana.<br>
+                            All the gradient for making burger meat is specified by Chief Nana.
+                        </blockquote>
+                    </td>
+                    <td>
+                        <h2 class="price">RM7.90</h2>
+                        <div><button class="addminus" type="button"> - </button><input value="0" min="0"
+                                type="number"><button class="addminus" type="button"> + </button></div><br>
+                        <button class="addToCart">Add to cart</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="fries.jpg" alt="French Fries"></td>
+                    <td>
+                        <blockquote>
+                            <h2 class="foodName">Nana's Special French Fries</h2>
+                            <hr>
+                            "Nana's Special French Fries" is handmade by Chief Nana.<br>
+                            It was selected with some special series of potato to get better taste.
+                        </blockquote>
+                    </td>
+                    <td>
+                        <h2 class="price">RM5.90</h2>
+                        <div><button class="addminus" type="button"> - </button><input value="0" min="0"
+                                type="number"><button class="addminus" type="button"> + </button></div><br>
+                        <button class="addToCart">Add to cart</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="onionRings.jpg" alt="Onion Rings"></td>
+                    <td>
+                        <blockquote>
+                            <h2 class="foodName">Nana's Special Onion Rings</h2>
+                            <hr>
+                            Nana's Special Onion Rings has the best taste.<br>
+                            These are a few of our favourite onions, there's also the cipollini,<br>
+                            green onions, red onions, white onions, shallots, walla walla onions and Maui onions<br>
+                        </blockquote>
+                    </td>
+                    <td>
+                        <h2 class="price">RM5.90</h2>
+                        <div><button class="addminus" type="button"> - </button><input value="0" min="0"
+                                type="number"><button class="addminus" type="button"> + </button></div><br>
+                        <button class="addToCart">Add to cart</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="lemonade.jfif" alt="Lemonade"></td>
+                    <td>
+                        <blockquote>
+                            <h2 class="foodName">HomeMade's Lemonade</h2>
+                            <hr>
+                            It is a best selection for all customer.<br>
+                            The best SUGGESTION from customer.<br>
+                            You can get it with bigger size in here.<br>
+                            800ML of the drinks size.
+                        </blockquote>
+                    </td>
+                    <td>
+                        <h2 class="price">RM3.90</h2>
+                        <div><button class="addminus" type="button"> - </button><input value="0" min="0"
+                                type="number"><button class="addminus" type="button"> + </button></div><br>
+                        <button class="addToCart">Add to cart</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="coke.jpg" alt="Cokacola"></td>
+                    <td>
+                        <blockquote>
+                            <h2 class="foodName">Soft Drink-Coke</h2>
+                            <hr>
+                            It just a Soft Drink. You can get it with bigger size in here.<br>
+                            800ML of the drinks size.
+                        </blockquote>
+                    </td>
+                    <td>
+                        <h2 class="price">RM2.90</h2>
+                        <div><button class="addminus" type="button"> - </button><input value="0" min="0"
+                                type="number"><button class="addminus" type="button"> + </button></div><br>
+                        <button class="addToCart">Add to cart</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="sprite.jfif" alt="Sprite"></td>
+                    <td>
+                        <blockquote>
+                            <h2 class="foodName">Soft Drink-Sprite</h2>
+                            <hr>
+                            It just a Soft Drink. You can get it with bigger size in here.<br>
+                            800ML of the drinks size.
+                        </blockquote>
+                    </td>
+                    <td>
+                        <h2 class="price">RM2.90</h2>
+                        <div><button class="addminus" type="button"> - </button><input value="0" min="0"
+                                type="number"><button class="addminus" type="button"> + </button></div><br>
+                        <button class="addToCart">Add to cart</button>
+                    </td>
+                </tr>
+            </table>
+            <div class="tableHeader" id="deals">DEALS</div>
+            <table id="table2">
+                <tr>
+                    <td class="td1"><img src="chickenBurger.jpg" alt="Chicken Burger"><img src="beefBurger.jpg"
+                            alt="Beef Burger"></td>
+                    <td class="td2">
+                        <blockquote>
+                            <h2 class="foodName">Burger Bundle</h2>
+                            <h4>Signature Chicken Burger + Signature Beef Burger + Soft Drinks</h4>
+                            <hr>
+                            This meal including <strong>1</strong> Signature Chicken Burger and <strong>1</strong>
+                            Signature Beef Burger and a soft drinks.
+
+                        </blockquote>
+                    </td>
+                    <td class="td3">
+                        <h2 class="price">RM14.90</h2>
+                        <div><button class="addminus" type="button"> - </button><input value="0" min="0"
+                                type="number"><button class="addminus" type="button"> + </button></div><br>
+                        <button class="addToCart">Add to cart</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="beefBurger.jpg" alt="Beef Burger"><img src="fries.jpg" alt="French Fries"></td>
+                    <td>
+                        <blockquote>
+                            <h2 class="foodName">Beef Burger Set Meal</h2>
+                            <hr>
+                            Beef Burger with Fries and a Soft Drink
+                        </blockquote>
+                    </td>
+                    <td>
+                        <h2 class="price">RM9.90</h2>
+                        <div><button class="addminus" type="button"> - </button><input value="0" min="0"
+                                type="number"><button class="addminus" type="button"> + </button></div><br>
+                        <button class="addToCart">Add to cart</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="chickenBurger.jpg" alt="Chicken Burger"><img src="fries.jpg" alt="French Fries"></td>
+                    <td>
+                        <blockquote>
+                            <h2 class="foodName">Chicken Burger Set Meal</h2>
+                            <hr>
+                            Chicken Burger with Fries and a Soft Drink
+                        </blockquote>
+                    </td>
+                    <td>
+                        <h2 class="price">RM9.90</h2>
+                        <div><button class="addminus" type="button"> - </button><input value="0" min="0"
+                                type="number"><button class="addminus" type="button"> + </button></div><br>
+                        <button class="addToCart">Add to cart</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="supersnack.jpg" alt="SuperSnack"></td>
+                    <td>
+                        <blockquote>
+                            <h2 class="foodName">Super Snack</h2>
+                            <hr>
+                            Extra Large Size Onion Rings and Extra Large Size Fries
+                        </blockquote>
+                    </td>
+                    <td>
+                        <h2 class="price">RM10.90</h2>
+                        <div><button class="addminus" type="button"> - </button><input value="0" min="0"
+                                type="number"><button class="addminus" type="button"> + </button></div><br>
+                        <button class="addToCart">Add to cart</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <table id="aboutUs" class="tableAboutUs">
+            <tr>
+                <td class="titleAboutUs">About Us</td>
+                <td class="titleAboutUs" id="td2">Call Customer Services</td>
+            </tr>
+                <tr>
+                    <td class="tdAboutUs">
+                        Nana's Restaurant is founded by Ms.Nana. She is targeting to make a deliciuos and value western
+                        food for all her customer.
+                        In Bukit Batu, Malaysia, Nana launched the first "Nana's Restaurant" in August 2019.
+                        Serendah, Damansara, Klang City, Ampang, and Subang Jaya comprise five distinct regions today.
+                        Families, young children, and older citizens frequent Nana's Restaurant, which is widely
+                        recognised for its large crowd of patrons.
+                        Human nature is ideal for celebrating modest accomplishments or a delicious supper with loved
+                        ones.
+                        The "Nana's Restaurant" is open daily and is appropriate for breakfast, lunch, and supper.
+                        It provides various options such as beef burgers, chicken burgers, French fries, and even onion
+                        rings.
+                    </td>
+                    <td class="tdAboutUs">
+                        <p>Chief Nana: 0123456789</p>
+                        <p>Restaurant Counter: 0123456789</p>
+                    </td>
+                </tr>
+        </table>
+    </main>
+
+    <footer class="crFooter">
+        Copyright &copy; Nana's Rastaurant.com <a href="nana@restaurant.my">Contact us</a>
+    </footer>
+    <script>
+        $(".addminus").on("click", function () {
+
+            var $button = $(this);
+            var oldValue = $button.parent().find("input").val();
+
+            if ($button.text() == " + ") {
+                var newVal = parseFloat(oldValue) + 1;
+            } else {
+                // Don't allow decrementing below zero
+                if (oldValue > 0) {
+                    var newVal = parseFloat(oldValue) - 1;
+                } else {
+                    newVal = 0;
+                }
+            }
+
+            $button.parent().find("input").val(newVal);
+
+        });
+
+        $("#cartClear").on("click", function () {
+            $('#cartInfo').empty()
+            $('#subtotal').text('0')
+        });
+
+        $(".addToCart").on("click", function () {
+
+            var $button = $(this);
+            var number = $button.parent().find("input").val();
+            var price = $button.parent().find("h2.price").text();
+            var food_name = $button.parent().parent().find("h2.foodName").text();
+
+            var pricevalue = parseFloat(price.slice(2))
+            var totalprice = (pricevalue * number).toFixed(2)
+
+
+            if (parseInt(number) != 0) {
+                var info = '<div class="row"><div id="food_name" class="col-9">' + food_name + '</div><div id="number_price" class="col-3"> x ' + number + '<br>' + totalprice + '</div></div><br><hr>'
+
+                $('#cartInfo').append(info)
+
+                alert('Added!')
+                var subtotal = $('#subtotal').text()
+                var total = (parseFloat(subtotal) + parseFloat(totalprice)).toFixed(2)
+
+                $('#subtotal').text(total)
+
+            } else {
+                alert('Number cannot be zero!')
+            }
+        });
+
+
+
+    </script>
+</body>
+
+</html>
